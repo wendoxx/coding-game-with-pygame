@@ -1,12 +1,4 @@
-import pygame
+from code.Game import Game
 
-pygame.init()
-
-window = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
-
-while True:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            print("Quitting")
-            pygame.quit()
-            quit()
+game = Game()
+game.run()
